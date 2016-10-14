@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DFD525085C55D559DB2F1E380750A630C2C76363",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DFD525085C55D559DB2F1E380750A630C2C76363" : 9223372036854775807,
+    "48D2519E63807ACF172C8338EB1277CDFCF66063" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "76DE2A76-9021-474B-ABFD-331FAED518ED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DFD525085C55D559DB2F1E380750A630C2C76363" : "%E4%B8%8D%E5%BE%97%E5%A7%90\/",
+    "48D2519E63807ACF172C8338EB1277CDFCF66063" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BuDeJie",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BuDeJie\/BuDeJie.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leancloud\/ChatKit-OC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48D2519E63807ACF172C8338EB1277CDFCF66063"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zblbolin\/BuDeJie.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFD525085C55D559DB2F1E380750A630C2C76363"
+    }
+  ]
+}

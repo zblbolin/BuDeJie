@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D749DB061DAFBC4E00D7FEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB051DAFBC4E00D7FEAB /* main.m */; };
-		D749DB091DAFBC4F00D7FEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB081DAFBC4F00D7FEAB /* AppDelegate.m */; };
-		D749DB0C1DAFBC4F00D7FEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB0B1DAFBC4F00D7FEAB /* ViewController.m */; };
 		D749DB0F1DAFBC4F00D7FEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D749DB0D1DAFBC4F00D7FEAB /* Main.storyboard */; };
 		D749DB111DAFBC4F00D7FEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D749DB101DAFBC4F00D7FEAB /* Assets.xcassets */; };
 		D749DB141DAFBC4F00D7FEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D749DB121DAFBC4F00D7FEAB /* LaunchScreen.storyboard */; };
 		D749DB1F1DAFBC4F00D7FEAB /* BuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB1E1DAFBC4F00D7FEAB /* BuDeJieTests.m */; };
 		D749DB2A1DAFBC4F00D7FEAB /* BuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB291DAFBC4F00D7FEAB /* BuDeJieUITests.m */; };
+		D749DB501DAFF13D00D7FEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB4E1DAFF13D00D7FEAB /* AppDelegate.m */; };
+		D749DB511DAFF13D00D7FEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB4F1DAFF13D00D7FEAB /* main.m */; };
+		D749DB541DAFF18900D7FEAB /* ZBLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB531DAFF18900D7FEAB /* ZBLEssenceViewController.m */; };
+		D749DB571DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB561DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m */; };
+		D749DB5A1DAFF21200D7FEAB /* ZBLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB591DAFF21200D7FEAB /* ZBLMeViewController.m */; };
+		D749DB5D1DAFF23A00D7FEAB /* ZBLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB5C1DAFF23A00D7FEAB /* ZBLNewViewController.m */; };
+		D749DB611DAFF26900D7FEAB /* ZBLPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB601DAFF26900D7FEAB /* ZBLPublishViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +40,6 @@
 
 /* Begin PBXFileReference section */
 		D749DB011DAFBC4E00D7FEAB /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D749DB051DAFBC4E00D7FEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D749DB071DAFBC4F00D7FEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D749DB081DAFBC4F00D7FEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D749DB0A1DAFBC4F00D7FEAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D749DB0B1DAFBC4F00D7FEAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D749DB0E1DAFBC4F00D7FEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D749DB101DAFBC4F00D7FEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D749DB131DAFBC4F00D7FEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,19 @@
 		D749DB251DAFBC4F00D7FEAB /* BuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D749DB291DAFBC4F00D7FEAB /* BuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuDeJieUITests.m; sourceTree = "<group>"; };
 		D749DB2B1DAFBC5000D7FEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D749DB4D1DAFF13D00D7FEAB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D749DB4E1DAFF13D00D7FEAB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D749DB4F1DAFF13D00D7FEAB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D749DB521DAFF18900D7FEAB /* ZBLEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLEssenceViewController.h; sourceTree = "<group>"; };
+		D749DB531DAFF18900D7FEAB /* ZBLEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLEssenceViewController.m; sourceTree = "<group>"; };
+		D749DB551DAFF1D300D7FEAB /* ZBLFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLFriendTrendViewController.h; sourceTree = "<group>"; };
+		D749DB561DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLFriendTrendViewController.m; sourceTree = "<group>"; };
+		D749DB581DAFF21200D7FEAB /* ZBLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLMeViewController.h; sourceTree = "<group>"; };
+		D749DB591DAFF21200D7FEAB /* ZBLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLMeViewController.m; sourceTree = "<group>"; };
+		D749DB5B1DAFF23A00D7FEAB /* ZBLNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLNewViewController.h; sourceTree = "<group>"; };
+		D749DB5C1DAFF23A00D7FEAB /* ZBLNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLNewViewController.m; sourceTree = "<group>"; };
+		D749DB5F1DAFF26900D7FEAB /* ZBLPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLPublishViewController.h; sourceTree = "<group>"; };
+		D749DB601DAFF26900D7FEAB /* ZBLPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLPublishViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,7 @@
 		D749DB031DAFBC4E00D7FEAB /* BuDeJie */ = {
 			isa = PBXGroup;
 			children = (
-				D749DB071DAFBC4F00D7FEAB /* AppDelegate.h */,
-				D749DB081DAFBC4F00D7FEAB /* AppDelegate.m */,
-				D749DB0A1DAFBC4F00D7FEAB /* ViewController.h */,
-				D749DB0B1DAFBC4F00D7FEAB /* ViewController.m */,
+				D749DB371DAFF13D00D7FEAB /* Classes */,
 				D749DB0D1DAFBC4F00D7FEAB /* Main.storyboard */,
 				D749DB101DAFBC4F00D7FEAB /* Assets.xcassets */,
 				D749DB121DAFBC4F00D7FEAB /* LaunchScreen.storyboard */,
@@ -117,7 +126,6 @@
 		D749DB041DAFBC4E00D7FEAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D749DB051DAFBC4E00D7FEAB /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +146,194 @@
 				D749DB2B1DAFBC5000D7FEAB /* Info.plist */,
 			);
 			path = BuDeJieUITests;
+			sourceTree = "<group>";
+		};
+		D749DB371DAFF13D00D7FEAB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB381DAFF13D00D7FEAB /* Me(我) */,
+				D749DB3C1DAFF13D00D7FEAB /* Essence(精华) */,
+				D749DB401DAFF13D00D7FEAB /* New(新帖) */,
+				D749DB441DAFF13D00D7FEAB /* Publish()发布 */,
+				D749DB481DAFF13D00D7FEAB /* FriendTrend(关注) */,
+				D749DB4C1DAFF13D00D7FEAB /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D749DB381DAFF13D00D7FEAB /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB391DAFF13D00D7FEAB /* Controller */,
+				D749DB3A1DAFF13D00D7FEAB /* Model */,
+				D749DB3B1DAFF13D00D7FEAB /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		D749DB391DAFF13D00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB581DAFF21200D7FEAB /* ZBLMeViewController.h */,
+				D749DB591DAFF21200D7FEAB /* ZBLMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB3A1DAFF13D00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB3B1DAFF13D00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB3C1DAFF13D00D7FEAB /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB3D1DAFF13D00D7FEAB /* Controller */,
+				D749DB3E1DAFF13D00D7FEAB /* Model */,
+				D749DB3F1DAFF13D00D7FEAB /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		D749DB3D1DAFF13D00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB521DAFF18900D7FEAB /* ZBLEssenceViewController.h */,
+				D749DB531DAFF18900D7FEAB /* ZBLEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB3E1DAFF13D00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB3F1DAFF13D00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB401DAFF13D00D7FEAB /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB411DAFF13D00D7FEAB /* Controller */,
+				D749DB421DAFF13D00D7FEAB /* Model */,
+				D749DB431DAFF13D00D7FEAB /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		D749DB411DAFF13D00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB5B1DAFF23A00D7FEAB /* ZBLNewViewController.h */,
+				D749DB5C1DAFF23A00D7FEAB /* ZBLNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB421DAFF13D00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB431DAFF13D00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB441DAFF13D00D7FEAB /* Publish()发布 */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB451DAFF13D00D7FEAB /* Controller */,
+				D749DB461DAFF13D00D7FEAB /* Model */,
+				D749DB471DAFF13D00D7FEAB /* View */,
+			);
+			path = "Publish()发布";
+			sourceTree = "<group>";
+		};
+		D749DB451DAFF13D00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB5F1DAFF26900D7FEAB /* ZBLPublishViewController.h */,
+				D749DB601DAFF26900D7FEAB /* ZBLPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB461DAFF13D00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB471DAFF13D00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB481DAFF13D00D7FEAB /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB491DAFF13D00D7FEAB /* Controller */,
+				D749DB4A1DAFF13D00D7FEAB /* Model */,
+				D749DB4B1DAFF13D00D7FEAB /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		D749DB491DAFF13D00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB551DAFF1D300D7FEAB /* ZBLFriendTrendViewController.h */,
+				D749DB561DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB4A1DAFF13D00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB4B1DAFF13D00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB4C1DAFF13D00D7FEAB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB4D1DAFF13D00D7FEAB /* AppDelegate.h */,
+				D749DB4E1DAFF13D00D7FEAB /* AppDelegate.m */,
+				D749DB4F1DAFF13D00D7FEAB /* main.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +471,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D749DB0C1DAFBC4F00D7FEAB /* ViewController.m in Sources */,
-				D749DB091DAFBC4F00D7FEAB /* AppDelegate.m in Sources */,
-				D749DB061DAFBC4E00D7FEAB /* main.m in Sources */,
+				D749DB571DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m in Sources */,
+				D749DB501DAFF13D00D7FEAB /* AppDelegate.m in Sources */,
+				D749DB511DAFF13D00D7FEAB /* main.m in Sources */,
+				D749DB611DAFF26900D7FEAB /* ZBLPublishViewController.m in Sources */,
+				D749DB5A1DAFF21200D7FEAB /* ZBLMeViewController.m in Sources */,
+				D749DB541DAFF18900D7FEAB /* ZBLEssenceViewController.m in Sources */,
+				D749DB5D1DAFF23A00D7FEAB /* ZBLNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
