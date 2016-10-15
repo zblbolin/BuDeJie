@@ -19,6 +19,9 @@
 		D749DB5A1DAFF21200D7FEAB /* ZBLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB591DAFF21200D7FEAB /* ZBLMeViewController.m */; };
 		D749DB5D1DAFF23A00D7FEAB /* ZBLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB5C1DAFF23A00D7FEAB /* ZBLNewViewController.m */; };
 		D749DB611DAFF26900D7FEAB /* ZBLPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB601DAFF26900D7FEAB /* ZBLPublishViewController.m */; };
+		D749DB681DB0ACF800D7FEAB /* ZBLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB671DB0ACF800D7FEAB /* ZBLTabBarController.m */; };
+		D749DB6C1DB12B2D00D7FEAB /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */; };
+		D749DB6F1DB1BFDF00D7FEAB /* ZBLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		D749DB5C1DAFF23A00D7FEAB /* ZBLNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLNewViewController.m; sourceTree = "<group>"; };
 		D749DB5F1DAFF26900D7FEAB /* ZBLPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLPublishViewController.h; sourceTree = "<group>"; };
 		D749DB601DAFF26900D7FEAB /* ZBLPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLPublishViewController.m; sourceTree = "<group>"; };
+		D749DB661DB0ACF800D7FEAB /* ZBLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLTabBarController.h; sourceTree = "<group>"; };
+		D749DB671DB0ACF800D7FEAB /* ZBLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLTabBarController.m; sourceTree = "<group>"; };
+		D749DB6A1DB12B2D00D7FEAB /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		D749DB6D1DB1BFDF00D7FEAB /* ZBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLTabBar.h; sourceTree = "<group>"; };
+		D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +160,7 @@
 		D749DB371DAFF13D00D7FEAB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D749DB621DB0ACCC00D7FEAB /* Main(主要) */,
 				D749DB381DAFF13D00D7FEAB /* Me(我) */,
 				D749DB3C1DAFF13D00D7FEAB /* Essence(精华) */,
 				D749DB401DAFF13D00D7FEAB /* New(新帖) */,
@@ -329,11 +339,56 @@
 		D749DB4C1DAFF13D00D7FEAB /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D749DB691DB1243F00D7FEAB /* Category */,
 				D749DB4D1DAFF13D00D7FEAB /* AppDelegate.h */,
 				D749DB4E1DAFF13D00D7FEAB /* AppDelegate.m */,
 				D749DB4F1DAFF13D00D7FEAB /* main.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		D749DB621DB0ACCC00D7FEAB /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB631DB0ACCC00D7FEAB /* Controller */,
+				D749DB641DB0ACCC00D7FEAB /* Model */,
+				D749DB651DB0ACCC00D7FEAB /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		D749DB631DB0ACCC00D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB661DB0ACF800D7FEAB /* ZBLTabBarController.h */,
+				D749DB671DB0ACF800D7FEAB /* ZBLTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB641DB0ACCC00D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB651DB0ACCC00D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB6D1DB1BFDF00D7FEAB /* ZBLTabBar.h */,
+				D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749DB691DB1243F00D7FEAB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB6A1DB12B2D00D7FEAB /* UIImage+image.h */,
+				D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D749DB681DB0ACF800D7FEAB /* ZBLTabBarController.m in Sources */,
 				D749DB571DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m in Sources */,
 				D749DB501DAFF13D00D7FEAB /* AppDelegate.m in Sources */,
 				D749DB511DAFF13D00D7FEAB /* main.m in Sources */,
@@ -478,6 +534,8 @@
 				D749DB5A1DAFF21200D7FEAB /* ZBLMeViewController.m in Sources */,
 				D749DB541DAFF18900D7FEAB /* ZBLEssenceViewController.m in Sources */,
 				D749DB5D1DAFF23A00D7FEAB /* ZBLNewViewController.m in Sources */,
+				D749DB6F1DB1BFDF00D7FEAB /* ZBLTabBar.m in Sources */,
+				D749DB6C1DB12B2D00D7FEAB /* UIImage+image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

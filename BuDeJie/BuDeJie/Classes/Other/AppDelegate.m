@@ -7,11 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ZBLEssenceViewController.h"
-#import "ZBLMeViewController.h"
-#import "ZBLNewViewController.h"
-#import "ZBLPublishViewController.h"
-#import "ZBLFriendTrendViewController.h"
+#import "ZBLTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,47 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UITabBarController *tabbarVc = [[UITabBarController alloc] init];
+    ZBLTabBarController *tabbarVc = [[ZBLTabBarController alloc] init];
     self.window.rootViewController = tabbarVc;
     
-    ZBLEssenceViewController *essence = [[ZBLEssenceViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:essence];
-    [tabbarVc addChildViewController:nav];
     
-    ZBLNewViewController *new = [[ZBLNewViewController alloc]init];
-    UINavigationController *navN = [[UINavigationController alloc]initWithRootViewController:new];
-    [tabbarVc addChildViewController:navN];
-    
-    ZBLPublishViewController *publish = [[ZBLPublishViewController alloc]init];
-    UINavigationController *navP= [[UINavigationController alloc]initWithRootViewController:publish];
-    [tabbarVc addChildViewController:navP];
-    
-    ZBLFriendTrendViewController *friendTrend = [[ZBLFriendTrendViewController alloc]init];
-    UINavigationController *navF = [[UINavigationController alloc]initWithRootViewController:friendTrend];
-    [tabbarVc addChildViewController:navF];
-    
-    ZBLMeViewController *me = [[ZBLMeViewController alloc]init];
-    UINavigationController *navM = [[UINavigationController alloc]initWithRootViewController:me];
-    [tabbarVc addChildViewController:navM];
-    
-    nav.tabBarItem.title = @"精华";
-    nav.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    nav.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-    
-    navN.tabBarItem.title = @"新帖";
-    navN.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    navN.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-    
-    navF.tabBarItem.title = @"关注";
-    navF.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    navF.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-    
-    navM.tabBarItem.title = @"我";
-    navM.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    navM.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    
-    navP.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
-    navP.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_publish_click_icon"];
     
     
     [self.window makeKeyAndVisible];
