@@ -16,9 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupNavBar];
+    
 }
-
+-(void)setupNavBar{
+    //左边按钮
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"nav_item_game_icon"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"nav_item_game_click_icon"] forState:UIControlStateHighlighted];
+    [button sizeToFit];
+    [button addTarget:self action:@selector(game) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    //右边按钮
+    //titleView
+    
+}
+-(void)game{
+    ZBLFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

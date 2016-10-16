@@ -22,6 +22,7 @@
 		D749DB681DB0ACF800D7FEAB /* ZBLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB671DB0ACF800D7FEAB /* ZBLTabBarController.m */; };
 		D749DB6C1DB12B2D00D7FEAB /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */; };
 		D749DB6F1DB1BFDF00D7FEAB /* ZBLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */; };
+		D749DB721DB2A95600D7FEAB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB711DB2A95600D7FEAB /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,10 @@
 		D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		D749DB6D1DB1BFDF00D7FEAB /* ZBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLTabBar.h; sourceTree = "<group>"; };
 		D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLTabBar.m; sourceTree = "<group>"; };
+		D749DB701DB2A95600D7FEAB /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D749DB711DB2A95600D7FEAB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D749DB731DB2AC4700D7FEAB /* BuDeJie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.h; sourceTree = "<group>"; };
+		D749DB741DB30AAF00D7FEAB /* BuDeJie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +348,8 @@
 				D749DB4D1DAFF13D00D7FEAB /* AppDelegate.h */,
 				D749DB4E1DAFF13D00D7FEAB /* AppDelegate.m */,
 				D749DB4F1DAFF13D00D7FEAB /* main.m */,
+				D749DB731DB2AC4700D7FEAB /* BuDeJie.h */,
+				D749DB741DB30AAF00D7FEAB /* BuDeJie.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -387,6 +394,8 @@
 			children = (
 				D749DB6A1DB12B2D00D7FEAB /* UIImage+image.h */,
 				D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */,
+				D749DB701DB2A95600D7FEAB /* UIView+Frame.h */,
+				D749DB711DB2A95600D7FEAB /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -536,6 +545,7 @@
 				D749DB5D1DAFF23A00D7FEAB /* ZBLNewViewController.m in Sources */,
 				D749DB6F1DB1BFDF00D7FEAB /* ZBLTabBar.m in Sources */,
 				D749DB6C1DB12B2D00D7FEAB /* UIImage+image.m in Sources */,
+				D749DB721DB2A95600D7FEAB /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5AK8R5AMDE;
+				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -701,6 +712,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5AK8R5AMDE;
+				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

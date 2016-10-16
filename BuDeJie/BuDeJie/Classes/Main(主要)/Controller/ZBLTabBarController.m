@@ -50,6 +50,9 @@
     //自定义tabBar
     [self setUpTabBar];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 /*
  自定义tabBar
  */
