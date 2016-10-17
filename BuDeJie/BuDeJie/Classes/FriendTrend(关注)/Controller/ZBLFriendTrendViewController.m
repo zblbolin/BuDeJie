@@ -16,9 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupNavBar];
 }
+-(void)setupNavBar{
+    
+    //左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWiehImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] addTarget:self action:@selector(friendsRecomment)];
+    
+    //titleView
+    self.navigationItem.title = @"我的关注";
+    
+}
+-(void)friendsRecomment{
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

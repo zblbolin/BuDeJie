@@ -13,6 +13,7 @@
 #import "ZBLPublishViewController.h"
 #import "ZBLFriendTrendViewController.h"
 #import "ZBLTabBar.h"
+#import "ZBLNavigationController.h"
 @interface ZBLTabBarController ()
 
 @end
@@ -64,12 +65,12 @@
 -(void)setUpAllChildViewController{
     //精华
     ZBLEssenceViewController *essence = [[ZBLEssenceViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:essence];
+    ZBLNavigationController *nav = [[ZBLNavigationController alloc]initWithRootViewController:essence];
     [self addChildViewController:nav];
     
     //新帖
     ZBLNewViewController *new = [[ZBLNewViewController alloc]init];
-    UINavigationController *navN = [[UINavigationController alloc]initWithRootViewController:new];
+    ZBLNavigationController *navN = [[ZBLNavigationController alloc]initWithRootViewController:new];
     [self addChildViewController:navN];
     
     //发布
@@ -78,12 +79,12 @@
     
     //关注
     ZBLFriendTrendViewController *friendTrend = [[ZBLFriendTrendViewController alloc]init];
-    UINavigationController *navF = [[UINavigationController alloc]initWithRootViewController:friendTrend];
+    ZBLNavigationController *navF = [[ZBLNavigationController alloc]initWithRootViewController:friendTrend];
     [self addChildViewController:navF];
     
     //我
     ZBLMeViewController *me = [[ZBLMeViewController alloc]init];
-    UINavigationController *navM = [[UINavigationController alloc]initWithRootViewController:me];
+    ZBLNavigationController *navM = [[ZBLNavigationController alloc]initWithRootViewController:me];
     [self addChildViewController:navM];
 }
 #pragma mark ---设置所有tabbar上的按钮的内容

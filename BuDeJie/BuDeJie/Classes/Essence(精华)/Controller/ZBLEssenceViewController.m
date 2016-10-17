@@ -20,20 +20,20 @@
     
 }
 -(void)setupNavBar{
-    //左边按钮
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:[UIImage imageNamed:@"nav_item_game_icon"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"nav_item_game_click_icon"] forState:UIControlStateHighlighted];
-    [button sizeToFit];
-    [button addTarget:self action:@selector(game) forControlEvents:UIControlEventTouchUpInside];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    //左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWiehImage:[UIImage imageNamed:@"nav_item_game_icon"] highImage:[UIImage imageNamed:@"nav_item_game_click_icon"] addTarget:self action:@selector(game)];
     //右边按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWiehImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] addTarget:self action:@selector(random)];
     //titleView
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
 }
 -(void)game{
     ZBLFunc;
+}
+-(void)random{
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

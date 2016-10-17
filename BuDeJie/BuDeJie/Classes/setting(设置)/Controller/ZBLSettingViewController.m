@@ -1,44 +1,28 @@
 //
-//  ZBLMeViewController.m
+//  ZBLSettingViewController.m
 //  BuDeJie
 //
-//  Created by 张伯林 on 16/10/14.
+//  Created by 张伯林 on 16/10/16.
 //  Copyright © 2016年 张伯林. All rights reserved.
 //
 
-#import "ZBLMeViewController.h"
 #import "ZBLSettingViewController.h"
-@interface ZBLMeViewController ()
+
+@interface ZBLSettingViewController ()
 
 @end
 
-@implementation ZBLMeViewController
+@implementation ZBLSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置导航条左按钮
     
-    [self setupNavBar];
+    self.title = @"设置";
+//    self.navigationItem.rightBarButtonItem = []
 }
--(void)setupNavBar{
-    
-    //设置
-    UIBarButtonItem *settingItem = [UIBarButtonItem itemWiehImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] addTarget:self action:@selector(setting)];
-    //夜间模式
-    UIBarButtonItem *nightItem = [UIBarButtonItem itemWiehImage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] addTarget:self action:@selector(night:)];
-    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
-    
-    //titleView
-    self.navigationItem.title = @"我的";
-    
-}
--(void)setting{
-    ZBLSettingViewController *setting = [[ZBLSettingViewController alloc]init];
-    setting.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:setting animated:YES];
-}
--(void)night:(UIButton *)button{
-    button.selected = !button.selected;
-
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

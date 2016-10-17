@@ -23,6 +23,9 @@
 		D749DB6C1DB12B2D00D7FEAB /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */; };
 		D749DB6F1DB1BFDF00D7FEAB /* ZBLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB6E1DB1BFDF00D7FEAB /* ZBLTabBar.m */; };
 		D749DB721DB2A95600D7FEAB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB711DB2A95600D7FEAB /* UIView+Frame.m */; };
+		D749DB771DB30DFA00D7FEAB /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB761DB30DFA00D7FEAB /* UIBarButtonItem+Item.m */; };
+		D749DB7A1DB3746F00D7FEAB /* ZBLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB791DB3746F00D7FEAB /* ZBLNavigationController.m */; };
+		D749DB811DB376D200D7FEAB /* ZBLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749DB801DB376D200D7FEAB /* ZBLSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,12 @@
 		D749DB711DB2A95600D7FEAB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		D749DB731DB2AC4700D7FEAB /* BuDeJie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.h; sourceTree = "<group>"; };
 		D749DB741DB30AAF00D7FEAB /* BuDeJie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
+		D749DB751DB30DFA00D7FEAB /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		D749DB761DB30DFA00D7FEAB /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		D749DB781DB3746F00D7FEAB /* ZBLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLNavigationController.h; sourceTree = "<group>"; };
+		D749DB791DB3746F00D7FEAB /* ZBLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLNavigationController.m; sourceTree = "<group>"; };
+		D749DB7F1DB376D200D7FEAB /* ZBLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLSettingViewController.h; sourceTree = "<group>"; };
+		D749DB801DB376D200D7FEAB /* ZBLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +174,7 @@
 		D749DB371DAFF13D00D7FEAB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D749DB7B1DB3769400D7FEAB /* setting(设置) */,
 				D749DB621DB0ACCC00D7FEAB /* Main(主要) */,
 				D749DB381DAFF13D00D7FEAB /* Me(我) */,
 				D749DB3C1DAFF13D00D7FEAB /* Essence(精华) */,
@@ -369,6 +379,8 @@
 			children = (
 				D749DB661DB0ACF800D7FEAB /* ZBLTabBarController.h */,
 				D749DB671DB0ACF800D7FEAB /* ZBLTabBarController.m */,
+				D749DB781DB3746F00D7FEAB /* ZBLNavigationController.h */,
+				D749DB791DB3746F00D7FEAB /* ZBLNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,8 +408,43 @@
 				D749DB6B1DB12B2D00D7FEAB /* UIImage+image.m */,
 				D749DB701DB2A95600D7FEAB /* UIView+Frame.h */,
 				D749DB711DB2A95600D7FEAB /* UIView+Frame.m */,
+				D749DB751DB30DFA00D7FEAB /* UIBarButtonItem+Item.h */,
+				D749DB761DB30DFA00D7FEAB /* UIBarButtonItem+Item.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		D749DB7B1DB3769400D7FEAB /* setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB7C1DB3769400D7FEAB /* Controller */,
+				D749DB7D1DB3769400D7FEAB /* Model */,
+				D749DB7E1DB3769400D7FEAB /* View */,
+			);
+			path = "setting(设置)";
+			sourceTree = "<group>";
+		};
+		D749DB7C1DB3769400D7FEAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D749DB7F1DB376D200D7FEAB /* ZBLSettingViewController.h */,
+				D749DB801DB376D200D7FEAB /* ZBLSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749DB7D1DB3769400D7FEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749DB7E1DB3769400D7FEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,7 +583,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D749DB681DB0ACF800D7FEAB /* ZBLTabBarController.m in Sources */,
+				D749DB771DB30DFA00D7FEAB /* UIBarButtonItem+Item.m in Sources */,
+				D749DB811DB376D200D7FEAB /* ZBLSettingViewController.m in Sources */,
 				D749DB571DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m in Sources */,
+				D749DB7A1DB3746F00D7FEAB /* ZBLNavigationController.m in Sources */,
 				D749DB501DAFF13D00D7FEAB /* AppDelegate.m in Sources */,
 				D749DB511DAFF13D00D7FEAB /* main.m in Sources */,
 				D749DB611DAFF26900D7FEAB /* ZBLPublishViewController.m in Sources */,
