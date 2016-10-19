@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZBLTabBarController.h"
+#import "ZBLADViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ZBLTabBarController *tabbarVc = [[ZBLTabBarController alloc] init];
-    self.window.rootViewController = tabbarVc;
+    ZBLADViewController *adVc = [[ZBLADViewController alloc] init];
+    self.window.rootViewController = adVc;
     
     
     

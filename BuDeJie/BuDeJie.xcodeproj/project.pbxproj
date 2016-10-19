@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70F3AAF1DB67DA20085DE5F /* ZBLADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70F3AAE1DB67DA20085DE5F /* ZBLADViewController.m */; };
+		D70F3AB11DB680300085DE5F /* ZBLADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D70F3AB01DB680300085DE5F /* ZBLADViewController.xib */; };
 		D749DB0F1DAFBC4F00D7FEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D749DB0D1DAFBC4F00D7FEAB /* Main.storyboard */; };
 		D749DB111DAFBC4F00D7FEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D749DB101DAFBC4F00D7FEAB /* Assets.xcassets */; };
 		D749DB141DAFBC4F00D7FEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D749DB121DAFBC4F00D7FEAB /* LaunchScreen.storyboard */; };
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D70F3AAD1DB67DA20085DE5F /* ZBLADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLADViewController.h; sourceTree = "<group>"; };
+		D70F3AAE1DB67DA20085DE5F /* ZBLADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLADViewController.m; sourceTree = "<group>"; };
+		D70F3AB01DB680300085DE5F /* ZBLADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZBLADViewController.xib; sourceTree = "<group>"; };
 		D749DB011DAFBC4E00D7FEAB /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D749DB0E1DAFBC4F00D7FEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D749DB101DAFBC4F00D7FEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D70F3AAC1DB67D780085DE5F /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				D70F3AAD1DB67DA20085DE5F /* ZBLADViewController.h */,
+				D70F3AAE1DB67DA20085DE5F /* ZBLADViewController.m */,
+				D70F3AB01DB680300085DE5F /* ZBLADViewController.xib */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
 		D749DAF81DAFBC4E00D7FEAB = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +189,7 @@
 		D749DB371DAFF13D00D7FEAB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D70F3AAC1DB67D780085DE5F /* AD(广告) */,
 				D749DB7B1DB3769400D7FEAB /* setting(设置) */,
 				D749DB621DB0ACCC00D7FEAB /* Main(主要) */,
 				D749DB381DAFF13D00D7FEAB /* Me(我) */,
@@ -555,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70F3AB11DB680300085DE5F /* ZBLADViewController.xib in Resources */,
 				D749DB141DAFBC4F00D7FEAB /* LaunchScreen.storyboard in Resources */,
 				D749DB111DAFBC4F00D7FEAB /* Assets.xcassets in Resources */,
 				D749DB0F1DAFBC4F00D7FEAB /* Main.storyboard in Resources */,
@@ -586,6 +603,7 @@
 				D749DB771DB30DFA00D7FEAB /* UIBarButtonItem+Item.m in Sources */,
 				D749DB811DB376D200D7FEAB /* ZBLSettingViewController.m in Sources */,
 				D749DB571DAFF1D300D7FEAB /* ZBLFriendTrendViewController.m in Sources */,
+				D70F3AAF1DB67DA20085DE5F /* ZBLADViewController.m in Sources */,
 				D749DB7A1DB3746F00D7FEAB /* ZBLNavigationController.m in Sources */,
 				D749DB501DAFF13D00D7FEAB /* AppDelegate.m in Sources */,
 				D749DB511DAFF13D00D7FEAB /* main.m in Sources */,
@@ -837,6 +855,7 @@
 				D749DB301DAFBC5000D7FEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D749DB311DAFBC5000D7FEAB /* Build configuration list for PBXNativeTarget "BuDeJieTests" */ = {
 			isa = XCConfigurationList;
@@ -845,6 +864,7 @@
 				D749DB331DAFBC5000D7FEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D749DB341DAFBC5000D7FEAB /* Build configuration list for PBXNativeTarget "BuDeJieUITests" */ = {
 			isa = XCConfigurationList;
@@ -853,6 +873,7 @@
 				D749DB361DAFBC5000D7FEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

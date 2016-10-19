@@ -8,7 +8,7 @@
 
 #import "ZBLNavigationController.h"
 
-@interface ZBLNavigationController ()
+@interface ZBLNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -24,7 +24,10 @@
     [navBar setBackgroundImage:[UIImage imageNamed:@"navgationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWiehImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] addTarget:self action:@selector(back) title:@"返回"];
+    if (self.childViewControllers.count > 0) {//非根控制器
+        //恢复滑动返回功能->分析:把系统的返回按钮覆盖->1.手势失效(可能手势代理做一些事情,导致手势失效)
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWiehImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] addTarget:self action:@selector(back) title:@"返回"];
+    }
     [super pushViewController:viewController animated:YES];
 }
 -(void)back{
@@ -32,10 +35,19 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //bug:程序还在运行,但是界面假死了
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    pan.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
+    [self.view addGestureRecognizer:pan];
 }
-
+#pragma mark -- UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return self.childViewControllers.count > 1;
+}
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
