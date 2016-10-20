@@ -8,6 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZBLADViewController">
             <connections>
+                <outlet property="adContainView" destination="fIR-bB-KeN" id="e15-fq-Gzc"/>
+                <outlet property="launchImageView" destination="eyD-WS-UnG" id="eJl-Pt-p2p"/>
                 <outlet property="view" destination="iN0-l3-epB" id="E9v-Td-fDH"/>
             </connections>
         </placeholder>
@@ -15,7 +17,31 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-WS-UnG"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIR-bB-KeN" userLabel="广告占位视图"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Y-RM-jx5">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="OaO-LU-tiQ"/>
+                    </constraints>
+                    <state key="normal" title="跳过(3)"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H5Y-RM-jx5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="1Wu-vR-DD3"/>
+                <constraint firstAttribute="trailing" secondItem="eyD-WS-UnG" secondAttribute="trailing" id="4eM-Q7-ZhH"/>
+                <constraint firstAttribute="bottom" secondItem="fIR-bB-KeN" secondAttribute="bottom" id="Q91-nq-7jF"/>
+                <constraint firstItem="eyD-WS-UnG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RcN-2R-0TL"/>
+                <constraint firstItem="fIR-bB-KeN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SS3-Hh-Zxw"/>
+                <constraint firstAttribute="trailing" secondItem="fIR-bB-KeN" secondAttribute="trailing" id="YKQ-Ze-spt"/>
+                <constraint firstAttribute="bottom" secondItem="eyD-WS-UnG" secondAttribute="bottom" id="res-oV-zA4"/>
+                <constraint firstAttribute="trailing" secondItem="H5Y-RM-jx5" secondAttribute="trailing" constant="20" id="sob-qN-Xgw"/>
+                <constraint firstItem="fIR-bB-KeN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z1d-by-XEi"/>
+                <constraint firstItem="eyD-WS-UnG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zAj-sP-QHx"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

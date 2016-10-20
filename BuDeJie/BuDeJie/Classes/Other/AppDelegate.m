@@ -22,9 +22,6 @@
     ZBLADViewController *adVc = [[ZBLADViewController alloc] init];
     self.window.rootViewController = adVc;
     
-    
-    
-    
     [self.window makeKeyAndVisible];
     return YES;
 }
